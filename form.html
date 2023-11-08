@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700;900&family=Sen:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Form</title>
+  </head>
+  <body data-theme="light">
+    <div class="content">
+      <div class="content__sticky">
+        <header class="header" data-scroll="active">
+          <h1 class="header__text" data-scroll="active">
+            Удивительная веб-страница
+          </h1>
+        </header>
+        <nav class="navigation">
+          <a class="navigation__item" href="#">
+            <i class="fa-solid fa-fish"></i>
+            <p class="navigation__paragraph">Форма</p>
+          </a>
+          <a class="navigation__item" href="#">
+            <i class="fa-solid fa-ship"></i>
+            <p class="navigation__paragraph">Форма</p>
+          </a>
+          <a class="navigation__item" href="#">
+            <i class="fa-solid fa-shrimp"></i>
+            <p class="navigation__paragraph">Форма</p>
+          </a>
+          <a class="navigation__item" href="#">
+            <i class="fa-solid fa-lemon"></i>
+            <p class="navigation__paragraph">Форма</p>
+          </a>
+          <a class="navigation__item" href="#">
+            <i class="fa-solid fa-apple-whole"></i>
+            <p class="navigation__paragraph">Форма</p>
+          </a>
+          <a href="./index.html" class="navigation__item">
+            <i class="fa-solid fa-house"></i>
+            <p class="navigation__paragraph">На главную</p>
+          </a>
+        </nav>
+      </div>
+      <div class="content__dynamic">
+        <div class="wrapper">
+          <form action="" class="form">
+            <p class="form__paragraph">Давайте знакомиться!</p>
+            <input class="form__input" type="text" placeholder="Имя" />
+            <input class="form__input" type="text" placeholder="Фамилия" />
+            <input class="form__input" type="date" />
+            <textarea
+              class="form__input form__textarea"
+              placeholder="Сообщение"
+            ></textarea>
+            <fieldset class="form__gender">
+              <legend>Ваш пол</legend>
+              <div class="form__item">
+                <input type="radio" value="Мужской" name="gender" checked />
+                <label for="male">Мужской</label>
+              </div>
+              <div class="form__item">
+                <input type="radio" value="Женский" name="gender" />
+                <label for="female">Женский</label>
+              </div>
+            </fieldset>
+            <input
+              class="form__input form__submit"
+              type="submit"
+              value="Отправить"
+            />
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">Просто лучший футер</footer>
+  </body>
+</html>
